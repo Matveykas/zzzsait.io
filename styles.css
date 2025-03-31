@@ -1,0 +1,309 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+}
+
+.container {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    width: 100%;
+    max-width: 900px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1s ease-out;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #7d8b8c;
+    margin-bottom: 30px;
+}
+
+/* Описание и разделы */
+.intro-section, .info-section, .life-benefits {
+    margin-bottom: 40px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #34495e;
+    margin-bottom: 20px;
+}
+
+/* Карточки с преимуществами */
+.benefit-cards, .life-benefit-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.benefit-card, .life-benefit-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    animation: slideInUp 1s ease-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.benefit-card h3, .life-benefit-card h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.benefit-card p, .life-benefit-card p {
+    font-size: 1rem;
+    color: #7d8b8c;
+    margin-bottom: 15px;
+}
+
+/* Карточки с методами дешифровки */
+.method-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    animation: fadeInUp 1s ease-out;
+}
+
+.method-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    transition: all 0.3s ease;
+    animation: slideInUp 1s ease-out;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    overflow: hidden;
+    word-wrap: break-word;
+    max-width: 100%;
+}
+
+.method-card h3 {
+    font-size: 1.3rem;
+    color: #34495e;
+    margin-bottom: 10px;
+}
+
+.method-card p {
+    font-size: 1rem;
+    color: #7d8b8c;
+    margin-bottom: 15px;
+}
+
+.method-card h4 {
+    font-size: 1.1rem;
+    color: #34495e;
+    margin-top: 15px;
+}
+
+.method-card .example {
+    font-size: 0.9rem;
+    color: #3498db;
+    font-style: italic;
+}
+
+.method-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Иконки для методов дешифровки */
+.icon {
+    width: 50px;
+    height: 50px;
+    background-color: #3498db;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+.caesar-icon {
+    background-color: #e67e22;
+}
+
+.rot-icon {
+    background-color: #9b59b6;
+}
+
+.md5-icon {
+    background-color: #16a085;
+}
+
+.sha1-icon {
+    background-color: #f39c12;
+}
+
+.sha256-icon {
+    background-color: #8e44ad;
+}
+
+.base64-icon {
+    background-color: #3498db;
+}
+
+.hex-icon {
+    background-color: #2ecc71;
+}
+
+.vigenere-icon {
+    background-color: #f1c40f;
+}
+
+/* Ввод данных */
+textarea, input, select, button {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 12px;
+    font-size: 1rem;
+    outline: none;
+    border: 2px solid #dfe6e9;
+    background-color: #f4f6f9;
+    color: #333;
+    transition: all 0.3s ease;
+    box-sizing: border-box;
+}
+
+textarea {
+    min-height: 150px;
+    font-family: 'Courier New', Courier, monospace;
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #2980b9;
+    transform: scale(1.05);
+}
+
+button:disabled {
+    background-color: #bdc3c7;
+}
+
+/* Плавные анимации */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Адаптивность */
+@media (max-width: 768px) {
+    .container {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+
+    .benefit-cards, .life-benefit-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .method-cards {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .benefit-cards, .life-benefit-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .method-cards {
+        grid-template-columns: 1fr;
+    }
+
+    button {
+        font-size: 1rem;
+    }
+}
